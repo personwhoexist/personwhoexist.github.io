@@ -1,4 +1,5 @@
-document.write("ok")
+document.open();
+document.write("ok");
 ok();
 var ok1 = 0;
 var pos = 1;
