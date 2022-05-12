@@ -186,7 +186,9 @@ function ai(){
             right()
         }
         aigoing = aigoing + 1;
+        document.write(aigoing)
         if(aigoing < 2){
+        document.write("ok2")
         setTimeout(ai, 100)
         }
         if(aigoing == 2){
