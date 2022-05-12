@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("notfine");
+        document.write("fine");
         ok11();
     }
     if (ok1 == pos) {
@@ -109,7 +109,7 @@ function ok11() {
         if (e.code == 'KeyV') {
             if(nobreak == false){
             document.write("okjk");
-            setTimeout(aitested,100);
+            aitested();
             }
         }
     });
