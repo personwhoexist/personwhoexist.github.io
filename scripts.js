@@ -170,6 +170,7 @@ function ok11() {
     });
 }
 function ai(){
+    document.write("okkk");
     nobreak = true;
     if(tested == false){
         rando = Math.floor(Math.random() * 4)
