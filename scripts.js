@@ -193,7 +193,7 @@ function ai(){
         aigoing = aigoing + 1;
         document.write(aigoing)
         if(aigoing < 2){
-        document.write("ok2");
+        document.write("ok6");
         ok1f();
         document.write("ok2");
         return(all);
