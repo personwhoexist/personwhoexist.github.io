@@ -191,12 +191,12 @@ function ai(){
             right()
         }
         aigoing = aigoing + 1;
-        document.write(aigoing)
+        document.write(aigoing);
         if(aigoing < 2){
         document.write("ok6");
         ok1f();
         document.write("ok2");
-        return(all);
+        return;
         }
         if(aigoing == 2){
             document.write("ok1")
