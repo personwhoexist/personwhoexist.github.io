@@ -1,5 +1,3 @@
-document.open();
-document.write("ok");
 ok();
 var ok1 = 0;
 var pos = 1;
@@ -25,7 +23,6 @@ var input9 = [0];
 var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok() {
-    document.write("<p>ok</p>");
     ok1 = ok1 + 1;
     if (ok1 != 211) {
         setTimeout(ok, 0.001)
@@ -44,25 +41,25 @@ function ok11() {
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
             if ((pos + 1) <= 211) {
                 if ((pos) / 10 != Math.floor((pos) / 10)) {
                     pos = pos + 1;
-                    if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                    if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                         test = true;
                     }
-                    if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                    if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                         test = false;
                     }
                 }
             }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -76,23 +73,23 @@ function ok11() {
     document.addEventListener('keydown', function okk1(e) {
         if (e.code == 'KeyS') {
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
             if ((pos + 10) <= 211) {
                 pos = pos + 10;
-                if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                     test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                     test = false;
                 }
             }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -113,25 +110,25 @@ function ok11() {
     document.addEventListener('keydown', function okk3(e) {
         if (e.code == 'KeyA') {
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
             if ((pos - 1) > 0) {
                 if ((pos - 1) / 10 != Math.floor((pos - 1) / 10)) {
                     pos = pos - 1;
-                    if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                    if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                         test = true;
                     }
-                    if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                    if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                         test = false;
                     }
                 }
             }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -144,23 +141,23 @@ function ok11() {
     document.addEventListener('keydown', function okk4(e) {
         if (e.code == 'KeyW') {
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
             if ((pos - 10) > 0) {
                 pos = pos - 10;
-                if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                     test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                     test = false;
                 }
             }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -227,10 +224,10 @@ function ai(){
 }
 function left(){
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
                 if ((pos - 1) <= 211) {
                     if ((pos - 1) / 10 != Math.floor((pos - 1) / 10)) {
@@ -238,15 +235,15 @@ function left(){
                     all[currentnum][all[currentnum].length] = "left";
                     }
             }
-            if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+            if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                 test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                 test = false;
                 }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -258,10 +255,10 @@ function left(){
 }
 function right(){
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
                 if ((pos + 1) <= 211) {
                     if ((pos) / 10 != Math.floor((pos) / 10)) {
@@ -269,15 +266,15 @@ function right(){
                     all[currentnum][all[currentnum].length] = "right";
                     }
             }
-            if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+            if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                 test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                 test = false;
                 }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -289,24 +286,24 @@ function right(){
 }
 function up(){
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
                 if ((pos - 10) > 0) {
                 all[currentnum][all[currentnum].length] = "up";
                 pos = pos - 10;
             }
-            if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+            if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                 test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                 test = false;
                 }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
@@ -318,24 +315,24 @@ function up(){
 function down(){
 
             if (test == true) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
             if (test == false) {
-                document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png";
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
                 if ((pos + 10) <= 211) {
                 pos = pos + 10;
                 all[currentnum][all[currentnum].length] = "down";
             }
-            if (document.getElementById(pos).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+            if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                 test = true;
                 }
-                if (document.getElementById(pos).src != "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
                 test = false;
                 }
-            document.getElementById(pos).src = "https://www.w3spaces-preview.com/testingwithsemiai/test1.png";
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
             for (i = 1; i < 211; i++) {
-                if (document.getElementById(i).src == "https://www.w3spaces-preview.com/testingwithsemiai/stairsed.png") {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
                     test1 = test1 + 1;
                 }
             }
