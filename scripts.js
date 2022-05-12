@@ -24,7 +24,7 @@ var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok1f() {
 document.write("worked");
-    ai();
+    aitested();
 }
 function ok() {
     ok1 = ok1 + 1;
@@ -109,7 +109,7 @@ function ok11() {
         if (e.code == 'KeyV') {
             if(nobreak == false){
             document.write("okjk");
-            setTimeout(ai,100);
+            setTimeout(aitested,100);
             }
         }
     });
@@ -175,7 +175,7 @@ function ok11() {
         }
     });
 }
-function ai(){
+function aitested(){
     document.write("okkk");
     nobreak = true;
     if(tested == false){
