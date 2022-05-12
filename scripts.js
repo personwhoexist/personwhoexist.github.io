@@ -108,7 +108,8 @@ function ok11() {
     document.addEventListener('keydown', function okk2(e) {
         if (e.code == 'KeyV') {
             if(nobreak == false){
-            ai()
+            document.write("okjk");
+            setTimeout(ai,100);
             }
         }
     });
