@@ -195,7 +195,8 @@ function ai(){
         if(aigoing < 2){
         document.write("ok2");
         ok1f();
-        return;
+        document.write("ok2");
+        return(all);
         }
         if(aigoing == 2){
             document.write("ok1")
