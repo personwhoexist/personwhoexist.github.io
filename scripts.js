@@ -193,8 +193,9 @@ function ai(){
         aigoing = aigoing + 1;
         document.write(aigoing)
         if(aigoing < 2){
-        document.write("ok2")
-        setTimeout(ok1f, 100)
+        document.write("ok2");
+        ok1f();
+        return;
         }
         if(aigoing == 2){
             document.write("ok1")
