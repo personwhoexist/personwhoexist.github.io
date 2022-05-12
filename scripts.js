@@ -185,10 +185,10 @@ function ai(){
         if(rando == 3){
             right()
         }
+        aigoing = aigoing + 1;
         if(aigoing < 2){
         setTimeout(ai, 100)
         }
-        aigoing = aigoing + 1;
         if(aigoing == 2){
             document.write("ok1")
             setTimeout(ai, 100)
