@@ -23,7 +23,7 @@ var input9 = [0];
 var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok1f() {
-document.open();
+ai();
 }
 function ok() {
     ok1 = ok1 + 1;
@@ -197,7 +197,7 @@ function ai(){
         }
         if(aigoing == 2){
             document.write("ok1")
-            setTimeout(ai, 100)
+            setTimeout(ok1f, 100)
             tested = true;
         }
     }
