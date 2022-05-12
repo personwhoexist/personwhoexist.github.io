@@ -22,6 +22,9 @@ var input8 = [0];
 var input9 = [0];
 var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
+function ok1f() {
+document.open();
+}
 function ok() {
     ok1 = ok1 + 1;
     if (ok1 != 211) {
@@ -190,7 +193,7 @@ function ai(){
         document.write(aigoing)
         if(aigoing < 2){
         document.write("ok2")
-        setTimeout(ai, 100)
+        setTimeout(ok1f, 100)
         }
         if(aigoing == 2){
             document.write("ok1")
