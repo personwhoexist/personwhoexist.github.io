@@ -196,7 +196,6 @@ function ai(){
         document.write("ok6");
         ok1f();
         document.write("ok2");
-        return;
         }
         if(aigoing == 2){
             document.write("ok1")
