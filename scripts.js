@@ -105,13 +105,11 @@ function ok11() {
             test1 = 0;
         }
     });
-    document.addEventListener('keydown', function okk2(f) {
+    document.addEventListener('keydown', function okk2(e) {
         document.write("noworks");
-        if (f.code == 'KeyQ') {
+        if (e.code == 'KeyQ') {
             document.write("okkkkkkkkkkokokokeed");
-            if(nobreak == false){
-            document.write("okjk");
-            aitested();
+            
             }
         }
     });
