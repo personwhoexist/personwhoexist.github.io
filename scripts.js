@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("fine");
+        document.write("fined");
         ok11();
     }
     if (ok1 == pos) {
@@ -43,7 +43,6 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okthen");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
@@ -108,6 +107,7 @@ function ok11() {
     });
     document.addEventListener('keydown', function okk2(e) {
         if (e.code == 'KeyV') {
+            document.write("thereitworks");
             if(nobreak == false){
             document.write("okjk");
             aitested();
