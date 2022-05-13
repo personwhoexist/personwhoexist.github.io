@@ -109,7 +109,9 @@ function ok11() {
         document.write("noworks");
         if (e.code == 'KeyQ') {
             document.write("okkkkkkkkkkokokokeed");
-            
+            if(nobreak == false){
+            document.write("okjk");
+            aitested();
             }
         }
     });
@@ -146,6 +148,36 @@ function ok11() {
     });
     document.addEventListener('keydown', function okk4(e) {
         if (e.code == 'KeyW') {
+            if (test == true) {
+                document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
+            }
+            if (test == false) {
+                document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
+            }
+            if ((pos - 10) > 0) {
+                pos = pos - 10;
+                if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
+                    test = true;
+                }
+                if (document.getElementById(pos).src != "https://personwhoexist.github.io/stairsed.png") {
+                    test = false;
+                }
+            }
+            document.getElementById(pos).src = "https://personwhoexist.github.io/test1.png";
+            for (i = 1; i < 211; i++) {
+                if (document.getElementById(i).src == "https://personwhoexist.github.io/stairsed.png") {
+                    test1 = test1 + 1;
+                }
+            }
+
+            if (test1 == 209) {
+                document.open()
+            }
+            test1 = 0;
+        }
+    });
+        document.addEventListener('keydown', function okk4(e) {
+        if (e.code == 'KeyK') {
             if (test == true) {
                 document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
