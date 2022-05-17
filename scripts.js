@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("fineing");
+        document.write("fining");
         ok11();
     }
     if (ok1 == pos) {
@@ -178,10 +178,7 @@ function ok11() {
     });
         document.addEventListener('keydown', function okk4(e) {
         if (e.code == 'KeyK') {
-            
-            document.write("okjk");
             aitested();
-            
             if (test == true) {
                 document.getElementById(pos).src = "https://personwhoexist.github.io/test.png";
             }
@@ -219,21 +216,7 @@ function aitested(){
         if(rando == 0){
             up()
         }
-        if(rando == 1){
-            down()
-        }
-        if(rando == 2){
-            left()
-        }
-        if(rando == 3){
-            right()
-        }
-        aigoing = aigoing + 1;
-        document.write(aigoing);
-        if(aigoing < 2){
-        document.write("ok6");
-        ok1f();
-        document.write("ok2");
+        
         }
         if(aigoing == 2){
             document.write("ok1")
