@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("kkkkkk");
+        document.write("noyou");
         ok11();
     }
     if (ok1 == pos) {
@@ -103,16 +103,6 @@ function ok11() {
                 document.open()
             }
             test1 = 0;
-        }
-    });
-    document.addEventListener('keydown', function okk2(e) {
-        document.write("noworks");
-        if (e.code == 'KeyQ') {
-            document.write("okkkkkkkkkkokokokeed");
-            if(nobreak == false){
-            document.write("okjk");
-            aitested();
-            }
         }
     });
     document.addEventListener('keydown', function okk3(e) {
@@ -193,6 +183,12 @@ function aitested(){
         }
         if(rando == 1){
             down()
+        }
+        if(rando == 2){
+            left()
+        }
+        if(rando == 3){
+            right()
         }
         if(aigoing == 2){
             document.write("ok1")
