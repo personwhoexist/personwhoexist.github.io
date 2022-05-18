@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("noyou");
+        document.write("okthen");
         ok11();
     }
     if (ok1 == pos) {
