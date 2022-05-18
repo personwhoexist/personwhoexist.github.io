@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("fine");
+        document.write("fined");
         ok11();
     }
     if (ok1 == pos) {
