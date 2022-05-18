@@ -213,6 +213,7 @@ function aitested(){
     nobreak = true;
     if(tested == false){
         rando = Math.floor(Math.random() * 4)
+        document.write(rando);
         if(rando == 0){
             up()
         }
