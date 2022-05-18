@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("fin");
+        document.write("fine");
         ok11();
     }
     if (ok1 == pos) {
@@ -215,6 +215,9 @@ function aitested(){
         rando = Math.floor(Math.random() * 4)
         if(rando == 0){
             up()
+        }
+        if(rando == 1){
+            down()
         }
         if(aigoing == 2){
             document.write("ok1")
