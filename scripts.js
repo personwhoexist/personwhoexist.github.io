@@ -216,8 +216,6 @@ function aitested(){
         if(rando == 0){
             up()
         }
-        
-        }
         if(aigoing == 2){
             document.write("ok1")
             setTimeout(ok1f, 100)
