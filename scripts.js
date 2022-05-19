@@ -25,24 +25,6 @@ var all = [input1, input2, input3, input4, input5, input6, input7, input8, input
 function ok1f() {
     document.write("ok")
     document.write(all[currentnum].length)
-    for(i = all[currentnum].length - 1; i > 0; i--){
-        if(all[currentnum][i] == "left"){
-            right()
-            left()
-        }
-        if(all[currentnum][i] == "right"){
-            left()
-            right()
-        }
-        if(all[currentnum][i] == "up"){
-            down()
-            up()
-        }
-        if(all[currentnum][i] == "down"){
-            up()
-            down()
-        }
-    }
     currentnum = currentnum + 1;
     nobreak = false;
 }
@@ -63,7 +45,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okthe");
+    document.write("okthenn");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
