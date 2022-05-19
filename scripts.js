@@ -42,7 +42,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("ok");
+    document.write("okedd");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
@@ -199,7 +199,7 @@ function aitested(){
         }
     }
     if(tested == true){
-    aigoing = true;
+    aigoing = 0;
     document.write("ok")
     document.write(all[currentnum].length)
     for(i = all[currentnum].length - 1; i > 0; i--){
