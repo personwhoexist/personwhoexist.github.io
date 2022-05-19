@@ -45,7 +45,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okthenn");
+    document.write("no");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
