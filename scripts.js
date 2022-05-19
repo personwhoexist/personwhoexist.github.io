@@ -43,7 +43,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okthenn");
+    document.write("ok");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
@@ -52,7 +52,7 @@ function ok11() {
             if (test == false) {
                 document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
-            if ((pos + 1) <= 211) {
+            if ((pos + 1) <= 210) {
                 if ((pos) / 10 != Math.floor((pos) / 10)) {
                     pos = pos + 1;
                     if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
@@ -84,7 +84,7 @@ function ok11() {
             if (test == false) {
                 document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
-            if ((pos + 10) <= 211) {
+            if ((pos + 10) <= 210) {
                 pos = pos + 10;
                 if (document.getElementById(pos).src == "https://personwhoexist.github.io/stairsed.png") {
                     test = true;
@@ -174,7 +174,6 @@ function ok11() {
     });
 }
 function aitested(){
-    document.write("okkk");
     nobreak = true;
     if(tested == false){
         rando = Math.floor(Math.random() * 4)
@@ -194,7 +193,8 @@ function aitested(){
         aigoing = aigoing + 1;
         document.write(aigoing);
         if(aigoing == 2){
-            document.write("ok1")
+            setTimeout(ok1f, 100)
+            aigoing = 0;
         }
     }
     if(tested == true){
@@ -322,7 +322,7 @@ function down(){
             if (test == false) {
                 document.getElementById(pos).src = "https://personwhoexist.github.io/stairsed.png";
             }
-                if ((pos + 10) <= 211) {
+                if ((pos + 10) <= 210) {
                 pos = pos + 10;
                 all[currentnum][all[currentnum].length] = "down";
             }
