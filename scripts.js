@@ -32,8 +32,9 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("ok");
+        document.write("okthe");
         ok11();
+        return;
     }
     if (ok1 == pos) {
         document.write("<img id = " + ok1 + " src = 'test1.png' width = 150 height = 100>")
@@ -194,8 +195,6 @@ function aitested(){
         document.write(aigoing);
         if(aigoing == 2){
             document.write("ok1")
-            setTimeout(ok1f, 100)
-            tested = true;
         }
     }
     if(tested == true){
