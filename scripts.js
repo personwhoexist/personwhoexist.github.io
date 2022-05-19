@@ -32,7 +32,7 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("okthen");
+        document.write("ok");
         ok11();
     }
     if (ok1 == pos) {
@@ -190,6 +190,8 @@ function aitested(){
         if(rando == 3){
             right()
         }
+        aigoing = aigoing + 1;
+        document.write(aigoing);
         if(aigoing == 2){
             document.write("ok1")
             setTimeout(ok1f, 100)
