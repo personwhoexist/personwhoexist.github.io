@@ -63,7 +63,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okthennn");
+    document.write("okthe");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
