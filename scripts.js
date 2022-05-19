@@ -23,7 +23,28 @@ var input9 = [0];
 var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok1f() {
-document.write("worked");
+    document.write("ok")
+    document.write(all[currentnum].length)
+    for(i = all[currentnum].length - 1; i > 0; i--){
+        if(all[currentnum][i] == "left"){
+            right()
+            left()
+        }
+        if(all[currentnum][i] == "right"){
+            left()
+            right()
+        }
+        if(all[currentnum][i] == "up"){
+            down()
+            up()
+        }
+        if(all[currentnum][i] == "down"){
+            up()
+            down()
+        }
+    }
+    currentnum = currentnum + 1;
+    nobreak = false;
 }
 function ok() {
     ok1 = ok1 + 1;
@@ -42,7 +63,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("okedd");
+    document.write("okthen");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
@@ -192,38 +213,11 @@ function aitested(){
         aigoing = aigoing + 1;
         document.write(aigoing);
         if(aigoing == 2){
-            tested = true;
+            ok1f()
         }
         if(aigoing != 2){
-            setTimeout(ok1f, 100)
+            setTimeout(aitested, 100)
         }
-    }
-    if(tested == true){
-    aigoing = 0;
-    document.write("ok")
-    document.write(all[currentnum].length)
-    for(i = all[currentnum].length - 1; i > 0; i--){
-        if(all[currentnum][i] == "left"){
-            right()
-            left()
-        }
-        if(all[currentnum][i] == "right"){
-            left()
-            right()
-        }
-        if(all[currentnum][i] == "up"){
-            down()
-            up()
-        }
-        if(all[currentnum][i] == "down"){
-            up()
-            down()
-        }
-    }
-    currentnum = currentnum + 1;
-    nobreak = false;
-    aigoing = 0;
-    tested = false;
     }
 }
 function left(){
