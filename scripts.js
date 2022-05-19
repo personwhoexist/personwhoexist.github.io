@@ -32,7 +32,6 @@ function ok() {
         setTimeout(ok, 0.001)
     }
     if (ok1 == 211) {
-        document.write("okthe");
         ok11();
         return;
     }
@@ -44,6 +43,7 @@ function ok() {
     }
 }
 function ok11() {
+    document.write("okthenn");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
