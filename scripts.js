@@ -192,14 +192,14 @@ function aitested(){
         aigoing = aigoing + 1;
         document.write(aigoing);
         if(aigoing == 2){
-            setTimeout(ok1f, 100)
-            aigoing = 0;
+            tested = true;
         }
         if(aigoing != 2){
             setTimeout(ok1f, 100)
         }
     }
     if(tested == true){
+    aigoing = true;
     document.write("ok")
     document.write(all[currentnum].length)
     for(i = all[currentnum].length - 1; i > 0; i--){
