@@ -23,6 +23,7 @@ var input9 = [0];
 var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok1f() {
+    aigoing = 0;
     document.write("ok")
     document.write(all[currentnum].length)
     currentnum = currentnum + 1;
@@ -45,7 +46,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("no");
+    document.write("on");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
