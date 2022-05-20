@@ -24,10 +24,10 @@ var input10 = [0];
 var all = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10];
 function ok1f() {
     aigoing = 0;
-    document.write("ok")
     document.write(all[currentnum].length)
     currentnum = currentnum + 1;
     nobreak = false;
+    return;
 }
 function ok() {
     ok1 = ok1 + 1;
@@ -46,7 +46,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("on");
+    document.write("no");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
