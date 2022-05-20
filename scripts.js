@@ -45,7 +45,7 @@ function ok() {
     }
 }
 function ok11() {
-    document.write("on");
+    document.write("no");
     document.addEventListener('keydown', function okk(e) {
         if (e.code == 'KeyD') {
             if (test == true) {
@@ -179,7 +179,6 @@ function aitested(){
     nobreak = true;
     if(tested == false){
         rando = Math.floor(Math.random() * 4)
-        document.write(rando);
         if(rando == 0){
             up()
         }
