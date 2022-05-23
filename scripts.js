@@ -38,10 +38,10 @@ function ok() {
         return;
     }
     if (ok1 == pos) {
-        document.write("<img id = " + ok1 + " src = 'test1.png' width = 150 height = 100>")
+        document.write("<img id = " + ok1 + " src = 'https://personwhoexist.github.io/test1.png' width = 150 height = 100>")
     }
     if (ok1 != pos) {
-        document.write("<img id = " + ok1 + " src = 'test.png' width = 150 height = 100>")
+        document.write("<img id = " + ok1 + " src = 'https://personwhoexist.github.io/test.png' width = 150 height = 100>")
     }
 }
 function ok11() {
