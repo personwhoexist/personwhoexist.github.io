@@ -85,7 +85,6 @@ function ok() {
   }
 }
 function ok11() {
-  document.write('no');
   document.addEventListener('keydown', function okk(e) {
     if (e.code == 'KeyD') {
       if (test == true) {
@@ -280,7 +279,6 @@ function aitested() {
       right();
     }
     aigoing = aigoing + 1;
-    document.write(aigoing);
     if (aigoing == 2) {
       ok1f();
       return;
