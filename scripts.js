@@ -2,6 +2,7 @@ ok();
 var ok1 = 0;
 var pos = 1;
 var e;
+var goinged = false;
 var test = false;
 var test1 = 0;
 var testing = 0;
@@ -34,30 +35,33 @@ var all = [
   input10,
 ];
 function ok1f() {
-  document.write(currentnum);
-  if (all[currentnum][all[currentnum].length] == 'left') {
-    right();
-    left();
-    right();
+  goinged = true;
+  for (i = 0; i < all[currentnum].length; i++) {
+    if (all[currentnum][i] == 'left') {
+      setTimeout(right, 10);
+      setTimeout(left, 10);
+      setTimeout(right, 10);
+    }
+    if (all[currentnum][i] == 'right') {
+      setTimeout(left, 10);
+      setTimeout(right, 10);
+      setTimeout(left, 10);
+    }
+    if (all[currentnum][i] == 'up') {
+      setTimeout(down, 10);
+      setTimeout(up, 10);
+      setTimeout(down, 10);
+    }
+    if (all[currentnum][i] == 'down') {
+      setTimeout(up, 10);
+      setTimeout(down, 10);
+      setTimeout(up, 10);
+    }
   }
-  if (all[currentnum][all[currentnum].length] == 'right') {
-    left();
-    right();
-    left();
-  }
-  if (all[currentnum][all[currentnum].length] == 'up') {
-    down();
-    up();
-    down();
-  }
-  if (all[currentnum][all[currentnum].length] == 'down') {
-    up();
-    down();
-    up();
-  }
+  all[currentnum] = [];
   aigoing = 0;
   currentnum = currentnum + 1;
-  nobreak = false;
+  setTimeout(gone, 50);
   return;
 }
 function ok() {
@@ -127,6 +131,11 @@ function ok11() {
         document.open();
       }
       test1 = 0;
+    }
+  });
+  document.addEventListener('keydown', function okk1(e) {
+    if (e.code == 'KeyQ') {
+      document.write(all[currentnum]);
     }
   });
   document.addEventListener('keydown', function okk1(e) {
@@ -267,15 +276,19 @@ function aitested() {
   if (tested == false) {
     rando = Math.floor(Math.random() * 4);
     if (rando == 0) {
+      document.write('upchosen ');
       up();
     }
     if (rando == 1) {
+      document.write('downchosen ');
       down();
     }
     if (rando == 2) {
+      document.write('leftchosen ');
       left();
     }
     if (rando == 3) {
+      document.write('rightchosen ');
       right();
     }
     aigoing = aigoing + 1;
@@ -289,6 +302,7 @@ function aitested() {
   }
 }
 function left() {
+  document.write('left ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -300,7 +314,9 @@ function left() {
   if (pos - 1 <= 211) {
     if ((pos - 1) / 10 != Math.floor((pos - 1) / 10)) {
       pos = pos - 1;
-      all[currentnum][all[currentnum].length] = 'left';
+      if (goinged == false) {
+        all[currentnum][all[currentnum].length] = 'left';
+      }
     }
   }
   if (
@@ -332,6 +348,7 @@ function left() {
   test1 = 0;
 }
 function right() {
+  document.write('right ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -343,7 +360,9 @@ function right() {
   if (pos + 1 <= 211) {
     if (pos / 10 != Math.floor(pos / 10)) {
       pos = pos + 1;
-      all[currentnum][all[currentnum].length] = 'right';
+      if (goinged == false) {
+        all[currentnum][all[currentnum].length] = 'right';
+      }
     }
   }
   if (
@@ -375,6 +394,7 @@ function right() {
   test1 = 0;
 }
 function up() {
+  document.write('up ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -384,8 +404,10 @@ function up() {
       'https://personwhoexist.github.io/stairsed.png';
   }
   if (pos - 10 > 0) {
-    all[currentnum][all[currentnum].length] = 'up';
-    pos = pos - 10;
+    if (goinged == false) {
+      all[currentnum][all[currentnum].length] = 'up';
+      pos = pos - 10;
+    }
   }
   if (
     document.getElementById(pos).src ==
@@ -415,6 +437,7 @@ function up() {
   test1 = 0;
 }
 function down() {
+  document.write('down ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -423,9 +446,12 @@ function down() {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/stairsed.png';
   }
+
   if (pos + 10 <= 210) {
     pos = pos + 10;
-    all[currentnum][all[currentnum].length] = 'down';
+    if (goinged == false) {
+      all[currentnum][all[currentnum].length] = 'down';
+    }
   }
   if (
     document.getElementById(pos).src ==
@@ -454,4 +480,8 @@ function down() {
     document.open();
   }
   test1 = 0;
+}
+function gone() {
+  goinged = false;
+  nobreak = false;
 }
