@@ -302,7 +302,6 @@ function aitested() {
   }
 }
 function left() {
-  document.write('left ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -313,6 +312,7 @@ function left() {
   }
   if (pos - 1 <= 211) {
     if ((pos - 1) / 10 != Math.floor((pos - 1) / 10)) {
+      document.write('left ');
       pos = pos - 1;
       if (goinged == false) {
         all[currentnum][all[currentnum].length] = 'left';
@@ -348,7 +348,6 @@ function left() {
   test1 = 0;
 }
 function right() {
-  document.write('right ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -359,6 +358,7 @@ function right() {
   }
   if (pos + 1 <= 211) {
     if (pos / 10 != Math.floor(pos / 10)) {
+      document.write('right ');
       pos = pos + 1;
       if (goinged == false) {
         all[currentnum][all[currentnum].length] = 'right';
@@ -394,7 +394,6 @@ function right() {
   test1 = 0;
 }
 function up() {
-  document.write('up ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -406,6 +405,7 @@ function up() {
   if (pos - 10 > 0) {
     if (goinged == false) {
       all[currentnum][all[currentnum].length] = 'up';
+      document.write('up ');
       pos = pos - 10;
     }
   }
@@ -437,7 +437,6 @@ function up() {
   test1 = 0;
 }
 function down() {
-  document.write('down ');
   if (test == true) {
     document.getElementById(pos).src =
       'https://personwhoexist.github.io/test.png';
@@ -448,6 +447,7 @@ function down() {
   }
 
   if (pos + 10 <= 210) {
+    document.write('down ');
     pos = pos + 10;
     if (goinged == false) {
       all[currentnum][all[currentnum].length] = 'down';
