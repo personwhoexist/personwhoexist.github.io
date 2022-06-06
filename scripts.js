@@ -150,7 +150,7 @@ function ok1() {
     );
     document.write('<h1 onclick = forr()>Relevance</h1>');
     document.write(
-      '<imgsrc="https://personwhoexist.github.io/corn.jpeg" height="300" width="481"/>'
+      '<img src="https://personwhoexist.github.io/corn.jpeg" height="300" width="481"/>'
     );
   }
   if (levelopen >= 5) {
