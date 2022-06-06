@@ -1,4 +1,4 @@
-var wordlength = 19;
+var wordlength = 18;
 var currentnum = 1;
 var levelopen = 0;
 var word = '';
